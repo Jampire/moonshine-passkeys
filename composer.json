@@ -1,0 +1,68 @@
+{
+  "name": "jampire/moonshine-passkeys",
+  "type": "library",
+  "description": "WebAuthn Passkeys for MoonShine admin panel",
+  "keywords": [
+    "webauthn",
+    "passkeys",
+    "laravel",
+    "moonshine",
+    "authorization"
+  ],
+  "homepage": "https://github.com/Jampire/moonshine-passkeys",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dzianis Kotau",
+      "email": "me@dzianiskotau.com",
+      "homepage": "https://dzianiskotau.com/",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Jampire/moonshine-passkeys/issues",
+    "source": "https://github.com/Jampire/moonshine-passkeys"
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jampire\\MoonshinePasskeys\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jampire\\MoonshineImpersonate\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php vendor/bin/testbench package:discover --ansi"
+    ],
+    "style": "./vendor/bin/pint --test -v --ansi",
+    "fix-style": "./vendor/bin/pint --ansi",
+    "rector": "vendor/bin/rector --dry-run --ansi",
+    "fix-rector": "vendor/bin/rector --ansi",
+    "analyse": "./vendor/bin/phpstan analyse --ansi --memory-limit=-1",
+    "tests": "./vendor/bin/pest --no-coverage --parallel",
+    "tests-coverage": "XDEBUG_MODE=coverage ./vendor/bin/pest --coverage --min=100 --parallel",
+    "tests-type": "./vendor/bin/pest --type-coverage --min=100 --parallel",
+    "all": [
+      "@composer validate --strict --ansi",
+      "@style",
+      "@rector",
+      "@analyse",
+      "@tests-type",
+      "@tests-coverage"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
