@@ -1,0 +1,16 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "simplified_null_return": true,
+        "simplified_if_return": true,
+        "braces": true,
+        "new_with_braces": {
+            "anonymous_class": false,
+            "named_class": true
+        },
+        "not_operator_with_successor_space": false,
+        "phpdoc_align": {
+            "align": "left"
+        }
+    }
+}

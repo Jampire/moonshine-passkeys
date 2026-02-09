@@ -26,6 +26,17 @@
     "require": {
         "php": "^8.2"
     },
+    "require-dev": {
+        "driftingly/rector-laravel": "^2.1",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.27",
+        "moonshine/moonshine": "^4.7",
+        "orchestra/testbench": "^10.9",
+        "pestphp/pest": "^4.3",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "^4.0",
+        "rector/rector": "^2.3"
+    },
     "autoload": {
         "psr-4": {
             "Jampire\\MoonshinePasskeys\\": "src/"
@@ -33,10 +44,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Jampire\\MoonshineImpersonate\\Tests\\": "tests/"
+            "Jampire\\MoonshinePasskeys\\Tests\\": "tests/"
         }
     },
     "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ],
         "style": "./vendor/bin/pint --test -v --ansi",
         "fix-style": "./vendor/bin/pint --ansi",
         "rector": "vendor/bin/rector --dry-run --ansi",
