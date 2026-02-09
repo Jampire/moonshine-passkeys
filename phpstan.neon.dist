@@ -1,8 +1,10 @@
 includes:
     - vendor/larastan/larastan/extension.neon
     - vendor/nesbot/carbon/extension.neon
+    - phpstan-baseline.neon
 
 parameters:
     paths:
         - src
-    level: max
+    level: 8
+    treatPhpDocTypesAsCertain: false

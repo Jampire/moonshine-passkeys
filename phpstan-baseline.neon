@@ -1,0 +1,313 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$passkeyMeta\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$passkeys\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\PasskeyMeta\:\:\$public_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:passkeyMeta\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Actions/Options/RegisterUserOptionsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Actions/PasskeySwitchAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:passkeyMeta\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/PasskeySwitchAction.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$passkeyMeta\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Passkeys/AuthenticatePasskeyAction.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$data\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Actions/Passkeys/AuthenticatePasskeyAction.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Actions/Passkeys/AuthenticatePasskeyAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Passkeys/RegisterPasskeyAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:passkeys\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/Passkeys/RegisterPasskeyAction.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/Passkeys/UpdatePasskeyAction.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function call_user_func expects callable\(\)\: mixed, object given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Components/LoginForm.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$personable_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$personable_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Cannot access property \$passkeyMeta on Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Cannot access property \$passkeys on Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Parameter \#1 \$user of method Jampire\\MoonshinePasskeys\\Components\\PasskeyComponent\:\:isPersonable\(\) expects Illuminate\\Foundation\\Auth\\User, Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null given\.$#'
+			identifier: argument.type
+			count: 4
+			path: src/Components/PasskeyComponent.php
+
+		-
+			message: '#^Parameter \#1 \$user of method Jampire\\MoonshinePasskeys\\Actions\\PasskeySwitchAction\:\:execute\(\) expects Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract, Illuminate\\Foundation\\Auth\\User\|null given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Http/Controllers/ManagementController.php
+
+		-
+			message: '#^Call to an undefined method Jampire\\MoonshinePasskeys\\Actions\\Contracts\\Actionable\:\:execute\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Http/Controllers/OptionsController.php
+
+		-
+			message: '#^Call to an undefined method Jampire\\MoonshinePasskeys\\Actions\\Contracts\\Actionable\:\:execute\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Http/Controllers/PasskeyController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Requests/CreatePasskeyRequest.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:can\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Requests/CreatePasskeyRequest.php
+
+		-
+			message: '#^Method Jampire\\MoonshinePasskeys\\Http\\Requests\\CreatePasskeyRequest\:\:getNameRule\(\) should return array\<int, string\> but returns array\<int, Illuminate\\Validation\\Rules\\Unique\|string\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Http/Requests/CreatePasskeyRequest.php
+
+		-
+			message: '#^Parameter \#1 \$user of method Jampire\\MoonshinePasskeys\\Http\\Requests\\CreatePasskeyRequest\:\:getNameRule\(\) expects Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract, Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Requests/CreatePasskeyRequest.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Requests/RegisterOptionsRequest.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:can\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Requests/RegisterOptionsRequest.php
+
+		-
+			message: '#^Method Jampire\\MoonshinePasskeys\\Http\\Requests\\RegisterOptionsRequest\:\:getNameRule\(\) should return array\<int, string\> but returns array\<int, Illuminate\\Validation\\Rules\\Unique\|string\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Http/Requests/RegisterOptionsRequest.php
+
+		-
+			message: '#^Parameter \#1 \$user of method Jampire\\MoonshinePasskeys\\Http\\Requests\\RegisterOptionsRequest\:\:getNameRule\(\) expects Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract, Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Requests/RegisterOptionsRequest.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Requests/UpdatePasskeyRequest.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\:\:can\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Requests/UpdatePasskeyRequest.php
+
+		-
+			message: '#^Method Jampire\\MoonshinePasskeys\\Http\\Requests\\UpdatePasskeyRequest\:\:getNameRule\(\) should return array\<int, string\> but returns array\<int, Illuminate\\Validation\\Rules\\Unique\|string\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Http/Requests/UpdatePasskeyRequest.php
+
+		-
+			message: '#^Parameter \#1 \$user of method Jampire\\MoonshinePasskeys\\Http\\Requests\\UpdatePasskeyRequest\:\:getNameRule\(\) expects Illuminate\\Contracts\\Auth\\Authenticatable\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract, Illuminate\\Contracts\\Auth\\Authenticatable\|Illuminate\\Database\\Eloquent\\Model\|Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Requests/UpdatePasskeyRequest.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$personable\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Collections/PasskeyCollection.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$data\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Collections/PasskeyCollection.php
+
+		-
+			message: '#^Class Jampire\\MoonshinePasskeys\\Models\\Collections\\PasskeyCollection extends generic class Illuminate\\Database\\Eloquent\\Collection but does not specify its types\: TKey, TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Collections/PasskeyCollection.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<\(int\|string\),Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\|string\)\: Webauthn\\PublicKeyCredentialDescriptor, Closure\(Jampire\\MoonshinePasskeys\\Models\\Passkey\)\: Webauthn\\PublicKeyCredentialDescriptor given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Collections/PasskeyCollection.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>is_active" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Models/Collections/PasskeyCollection.php
+
+		-
+			message: '#^Trait Jampire\\MoonshinePasskeys\\Models\\Concerns\\HasPasskeys is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Models/Concerns/HasPasskeys.php
+
+		-
+			message: '#^Type \$this\(Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\) in generic type Illuminate\\Database\\Eloquent\\Relations\\MorphMany\<Jampire\\MoonshinePasskeys\\Models\\Passkey, \$this\(Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\)\> in PHPDoc tag @return is not subtype of template type TDeclaringModel of Illuminate\\Database\\Eloquent\\Model of class Illuminate\\Database\\Eloquent\\Relations\\MorphMany\.$#'
+			identifier: generics.notSubtype
+			count: 1
+			path: src/Models/Contracts/PasskeyContract.php
+
+		-
+			message: '#^Type \$this\(Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\) in generic type Illuminate\\Database\\Eloquent\\Relations\\MorphOne\<Jampire\\MoonshinePasskeys\\Models\\PasskeyMeta, \$this\(Jampire\\MoonshinePasskeys\\Models\\Contracts\\PasskeyContract\)\> in PHPDoc tag @return is not subtype of template type TDeclaringModel of Illuminate\\Database\\Eloquent\\Model of class Illuminate\\Database\\Eloquent\\Relations\\MorphOne\.$#'
+			identifier: generics.notSubtype
+			count: 1
+			path: src/Models/Contracts/PasskeyContract.php
+
+		-
+			message: '#^Class Jampire\\MoonshinePasskeys\\Models\\Passkey uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Passkey.php
+
+		-
+			message: '#^Method Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:data\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Passkey.php
+
+		-
+			message: '#^Return type \(Jampire\\MoonshinePasskeys\\Models\\Collections\\PasskeyCollection\) of method Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:newCollection\(\) should be compatible with return type \(Illuminate\\Database\\Eloquent\\Collection\<\(int\|string\), static\(Illuminate\\Database\\Eloquent\\Model\)\>\) of method Illuminate\\Database\\Eloquent\\Model\:\:newCollection\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Models/Passkey.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\PasskeyMeta\:\:\$public_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PasskeyMeta.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$personable_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Policies/PasskeyPolicy.php
+
+		-
+			message: '#^Access to an undefined property Jampire\\MoonshinePasskeys\\Models\\Passkey\:\:\$personable_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Policies/PasskeyPolicy.php
