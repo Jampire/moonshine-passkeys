@@ -1,13 +1,16 @@
 {
     "name": "jampire/moonshine-passkeys",
     "type": "library",
-    "description": "WebAuthn Passkeys for MoonShine admin panel",
+    "description": "Biometric Authentication for MoonShine Admin Panel",
     "keywords": [
+        "biometric",
         "webauthn",
         "passkeys",
         "laravel",
         "moonshine",
-        "authorization"
+        "authentication",
+        "authorization",
+        "security"
     ],
     "homepage": "https://github.com/Jampire/moonshine-passkeys",
     "license": "MIT",
@@ -24,13 +27,16 @@
         "source": "https://github.com/Jampire/moonshine-passkeys"
     },
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "illuminate/collections": "^10|^11|^12",
+        "moonshine/moonshine": "^4.0",
+        "web-auth/webauthn-lib": "^5.2"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^2.1",
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.27",
-        "moonshine/moonshine": "^4.7",
+        "mockery/mockery": "^1.6",
         "orchestra/testbench": "^10.9",
         "pestphp/pest": "^4.3",
         "pestphp/pest-plugin-laravel": "^4.0",
@@ -39,13 +45,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Jampire\\MoonshinePasskeys\\": "src/"
-        }
+            "Jampire\\MoonshinePasskeys\\": "src/",
+            "Jampire\\MoonshinePasskeys\\Database\\Factories\\": "database/factories/"
+
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "Jampire\\MoonshinePasskeys\\Tests\\": "tests/"
         }
+    },
+    "conflict": {
+        "moonshine/moonshine": "<4"
     },
     "scripts": {
         "post-autoload-dump": [
@@ -72,6 +86,13 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jampire\\MoonshinePasskeys\\PasskeyServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

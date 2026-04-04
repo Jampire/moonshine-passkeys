@@ -1,0 +1,3 @@
+- Add automatic installer
+- Fix all TODOs
+- Translate
