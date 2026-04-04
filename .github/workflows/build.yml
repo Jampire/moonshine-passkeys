@@ -41,7 +41,7 @@ jobs:
           echo "cache-key=${{ env.cache_key }}" >> "$GITHUB_OUTPUT"
           echo "extensions=${{ env.extensions }}" >> "$GITHUB_OUTPUT"
           echo "tools=${{ env.tools }}" >> "$GITHUB_OUTPUT"
-          echo "php_versions=['8.2', '8.3', '8.4', '8.5']" >> "$GITHUB_OUTPUT"
+          echo "php_versions=['8.3', '8.4', '8.5']" >> "$GITHUB_OUTPUT"
           echo "php_version=['8.4']" >> "$GITHUB_OUTPUT"
 
   code-style:
