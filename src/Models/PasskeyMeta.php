@@ -15,6 +15,8 @@ final class PasskeyMeta extends Model
 {
     protected $fillable = [
         'is_active',
+        'personable_type',
+        'personable_id',
     ];
 
     #[\Override]

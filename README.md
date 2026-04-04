@@ -23,7 +23,8 @@ Your admin panel should use HTTPS scheme only. Even the localhost.
 
 Use `composer` to install `MoonShine Passkeys` package:
 ```shell
-composer require jampire/moonshine-passkeys
+composer require jampire/moonshine-passkeys --with-all-dependencies
+php artisan migrate
 ```
 Publish a config file:
 ```shell
@@ -42,6 +43,8 @@ the [documentation][4] on how to install and configure MoonShine.
 ## Configuration
 
 *Auto-installer is coming soon...*
+
+The most critical config option is `passkeys.rp_id`. It should match the base URL your Admin Panel is running on.
 
 Passkeys are working with MoonShine User model. It should implement
 [`Jampire\MoonshinePasskeys\Models\Contracts\PasskeyContract`][5] interface.
@@ -118,6 +121,9 @@ Passkey component is installed in the user's profile page (`admin/page/profile-p
 Here is an example of how the package works on MacBook with iCloud Keychain and Conditional UI enabled:
 
 ![iCloud Demo](art/demo.gif "iCloud Demo")
+
+By default, to be able to login with traditional password, you need to type your email and click `Login` button.
+The password field will appear. Type the password and click `Login` button again.
 
 *More detailed documentation is coming soon...*
 
