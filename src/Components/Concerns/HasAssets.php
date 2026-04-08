@@ -78,6 +78,8 @@ trait HasAssets
 
     private function libraryVersion(string $filePath): string
     {
-        return config('passkeys.debug') ? Str::random(10) : Str::take(md5_file(public_path($filePath)), 10);
+        return config('passkeys.debug')
+            ? Str::random(10)
+            : Str::take((string)md5_file(public_path($filePath)), 10);
     }
 }
