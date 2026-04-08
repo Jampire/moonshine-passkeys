@@ -16,8 +16,6 @@ return [
     // this will increase a log file in size
     'debug' => (bool)env('PASSKEYS_DEBUG', config('app.debug')),
 
-    'version' => '0.1.2',
-
     'table_names' => [
         'passkeys' => (string)env('PASSKEYS_DB_PASSKEYS_TABLE', 'moonshine_passkeys'),
         'metas' => (string)env('PASSKEYS_DB_METAS_TABLE', 'moonshine_passkey_metas'),
