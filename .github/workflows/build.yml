@@ -18,7 +18,7 @@ permissions:
 
 env:
   extensions: simplexml, mbstring
-  tools: composer, laravel/pint, larastan/larastan, pestphp/pest
+  tools: composer, laravel/pint, larastan/larastan, pestphp/pest, cs2pr
   ini_values: max_execution_time=180, date.timezone=Europe/Warsaw
   cache_key: php-cache-v1
 
@@ -59,6 +59,7 @@ jobs:
       with:
         php_versions: ${{ needs.env-setup.outputs.php-version }}
         cache_key: ${{ needs.env-setup.outputs.cache-key }}
+        tools: ${{ needs.env-setup.outputs.tools }}
 
   tests:
     needs: [ env-setup ]

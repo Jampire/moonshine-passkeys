@@ -18,7 +18,10 @@ describe('LoginForm', function (): void {
     });
 
     it('returns FormBuilderContract', function (bool $passkeyEnabled): void {
-        config(['passkeys.enabled' => $passkeyEnabled]);
+        config([
+            'passkeys.enabled' => $passkeyEnabled,
+            'passkeys.debug' => true,
+        ]);
 
         $component = $this->loginForm;
 

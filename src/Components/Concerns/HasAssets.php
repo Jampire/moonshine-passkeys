@@ -19,10 +19,12 @@ trait HasAssets
      */
     private function attestationAssets(): array
     {
+        $filePath = 'vendor/moonshine-passkeys/js/attestation.js';
+
         return [
             $this->webauthnAsset(),
-            Js::make('vendor/moonshine-passkeys/js/attestation.js')
-                ->version($this->libraryVersion()),
+            Js::make($filePath)
+                ->version($this->libraryVersion($filePath)),
         ];
     }
 
@@ -47,10 +49,12 @@ trait HasAssets
      */
     private function assertionAssets(): array
     {
+        $filePath = 'vendor/moonshine-passkeys/js/assertion.js';
+
         return [
             $this->webauthnAsset(),
-            Js::make('vendor/moonshine-passkeys/js/assertion.js')
-                ->version($this->libraryVersion()),
+            Js::make($filePath)
+                ->version($this->libraryVersion($filePath)),
         ];
     }
 
@@ -72,8 +76,10 @@ trait HasAssets
             ->version('13.2.2');
     }
 
-    private function libraryVersion(): string
+    private function libraryVersion(string $filePath): string
     {
-        return config('passkeys.debug') ? Str::random(10) : config('passkeys.version');
+        return config('passkeys.debug')
+            ? Str::random(10)
+            : Str::take((string)md5_file(public_path($filePath)), 10);
     }
 }
